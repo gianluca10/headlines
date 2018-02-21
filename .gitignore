@@ -13,3 +13,5 @@ lib/*
 *.log
 *.sql
 *.sqlite
+*.json
+
