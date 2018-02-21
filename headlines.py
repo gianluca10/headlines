@@ -13,10 +13,10 @@ NEWS_FEEDS = {#'ARABNEWS' : 'http://www.arabnews.com/cat/1/rss.xml',
               }
 
 
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 @app.route('/<publication>')
 def get_news():
-    query = request.args.get('publication')
+    query = request.form.get('publication')
     articles = []
     for pub in NEWS_FEEDS:
         if query and pub != query:
