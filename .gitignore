@@ -1,0 +1,15 @@
+# Python compiled binaries #
+###########################
+*.pyc
+
+# virtenv directories #
+#######################
+bin/*
+include/*
+lib/*
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
